@@ -16,12 +16,11 @@ class App < Sinatra::Base
 
     #params[:phrase] * params[:number].to_i
     @say_phrase = " "
-    @number = params[:number].to_i
-    @phrase = params[:phrase]
-
-    @number.times do
-      "#{@phrase}\n"
+    params[:number].to_i.times do
+      @say_phrase += params[:phrase]
     end
+  
+  @say_phrase
 
   end
 
