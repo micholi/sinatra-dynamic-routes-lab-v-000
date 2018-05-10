@@ -4,14 +4,14 @@ require 'pry'
 class App < Sinatra::Base
   # Write your code here!
 
-  get 'reverse/:name' do
+  get '/reverse/:name' do
     @reverse_name = params[:name].reverse
     "#{@reverse_name}"
-    binding.pry
+    
 
   end
 
-  get 'square/:number' do
+  get '/square/:number' do
 
   end
 
@@ -20,7 +20,7 @@ class App < Sinatra::Base
     (num.to_i**2).to_s
   end
 
-  get 'say/:number/:phrase' do
+  get '/say/:number/:phrase' do
     @number = params[:number].to_i
     @phrase = params[:phrase]
 
@@ -29,11 +29,11 @@ class App < Sinatra::Base
     end
   end
 
-  get 'say/:word1/:word2' do
+  get '/say/:word1/:word2' do
 
   end
 
-  get ':operation/:number1/:number2' do
+  get '/:operation/:number1/:number2' do
 
   end
 
