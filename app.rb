@@ -19,7 +19,7 @@ class App < Sinatra::Base
     #params[:phrase] * params[:number].to_i
     @number = params[:number].to_i
     @phrase = params[:phrase]
-
+binding.pry
     @number.times do
       "#{@phrase}"
     end
