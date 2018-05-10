@@ -17,11 +17,8 @@ class App < Sinatra::Base
     @number = params[:number]
     @phrase = params[:phrase]
 
-    x = 0
-    until x = @number
-  #  @number.times do
+    @number.times do
       "#{@phrase}"
-      x += 1
     end
     # "Goodbye, #{@user_name}."
   end
