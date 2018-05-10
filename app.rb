@@ -7,9 +7,10 @@ class App < Sinatra::Base
   get 'reverse/:name' do
     @reverse_name = params[:name].reverse
     "#{@reverse_name}"
+    binding.pry
 
   end
-    
+
   get 'square/:number' do
     # @user_name = params[:name]
     # "Goodbye, #{@user_name}."
