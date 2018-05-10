@@ -4,13 +4,12 @@ require 'pry'
 class App < Sinatra::Base
   # Write your code here!
 
-  get 'reversename/:name' do
+  get 'reverse/:name' do
     @rev_name = params[:name].reverse
     "#{@rev_name}"
-    # @user_name = params[:name]
-    # "Goodbye, #{@user_name}."
-  end
 
+  end
+    
   get 'square/:number' do
     # @user_name = params[:name]
     # "Goodbye, #{@user_name}."
