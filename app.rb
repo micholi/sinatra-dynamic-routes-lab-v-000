@@ -21,7 +21,7 @@ class App < Sinatra::Base
 
 
   #  @n.times do
-      "#{@phrase}"
+      "#{@phrase}" * @number
 
   #  end
   #  "#{@phrase}"
