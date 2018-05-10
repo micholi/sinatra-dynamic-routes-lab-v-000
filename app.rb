@@ -12,8 +12,7 @@ class App < Sinatra::Base
   end
 
   get 'square/:number' do
-    # @user_name = params[:name]
-    # "Goodbye, #{@user_name}."
+
   end
 
   get 'say/:number/:phrase' do
@@ -26,13 +25,11 @@ class App < Sinatra::Base
   end
 
   get 'say/:word1/:word2' do
-    # @user_name = params[:name]
-    # "Goodbye, #{@user_name}."
+
   end
 
   get ':operation/:number1/:number2' do
-    # @user_name = params[:name]
-    # "Goodbye, #{@user_name}."
+    
   end
 
 end
