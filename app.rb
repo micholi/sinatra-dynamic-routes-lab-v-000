@@ -3,31 +3,32 @@ require_relative 'config/environment'
 class App < Sinatra::Base
   # Write your code here!
 
-  get 'reversename/:name'
+  get 'reversename/:name' do
     # @user_name = params[:name]
     # "Goodbye, #{@user_name}."
   end
 
-  get 'square/:number'
+  get 'square/:number' do
     # @user_name = params[:name]
     # "Goodbye, #{@user_name}."
   end
 
-  get 'say/:number/:phrase'
+  get 'say/:number/:phrase' do
     @number = params[:number]
     @phrase = params[:phrase]
-    @number.times do 
+    
+    @number.times do
       "#{phrase}"
-    #end
+    end
     # "Goodbye, #{@user_name}."
   end
 
-  get 'say/:word1/:word2'
+  get 'say/:word1/:word2' do
     # @user_name = params[:name]
     # "Goodbye, #{@user_name}."
   end
 
-  get ':operation/:number1/:number2'
+  get ':operation/:number1/:number2' do
     # @user_name = params[:name]
     # "Goodbye, #{@user_name}."
   end
