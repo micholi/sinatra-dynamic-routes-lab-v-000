@@ -18,7 +18,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @number.times do 
       "#{phrase}"
-    end
+    #end
     # "Goodbye, #{@user_name}."
   end
 
