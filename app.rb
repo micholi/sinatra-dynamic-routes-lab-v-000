@@ -24,6 +24,7 @@ class App < Sinatra::Base
       "#{@phrase}"
 
     end
+    "#{@phrase}"
   end
 
   get 'say/:word1/:word2' do
