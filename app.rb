@@ -22,7 +22,7 @@ class App < Sinatra::Base
 
     @n.times do
       "#{@phrase}"
-      
+
     end
   end
 
