@@ -20,7 +20,6 @@ class App < Sinatra::Base
     @number.times do
       "#{@phrase}"
     end
-    # "Goodbye, #{@user_name}."
   end
 
   get 'say/:word1/:word2' do
