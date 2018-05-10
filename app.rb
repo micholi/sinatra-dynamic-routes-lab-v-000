@@ -23,7 +23,7 @@ class App < Sinatra::Base
     @number.times do
       "#{@phrase}\n"
     end
-  
+
   end
 
   get '/say/:word1/:word2' do
