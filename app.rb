@@ -18,7 +18,6 @@ class App < Sinatra::Base
       @say_phrase += params[:phrase]
     end
     @say_phrase
-    binding.pry
   end
 
   get '/say/:word1/:word2' do
