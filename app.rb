@@ -5,6 +5,9 @@ class App < Sinatra::Base
   # Write your code here!
 
   get 'reversename/:name' do
+    @name = params[:name]
+    @name.reverse!
+    "#{@name}"
     # @user_name = params[:name]
     # "Goodbye, #{@user_name}."
   end
